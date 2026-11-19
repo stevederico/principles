@@ -10,6 +10,7 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 - [laravel](laravel/README.md): 121 principles
 - [nextjs](nextjs/README.md): 100 principles
 - [37signals](37signals/README.md): 110 principles (Shape Up, Getting Real, Hotwire, Kamal, Solid libraries, Campfire and Writebook)
+- [unix](unix/README.md): 101 principles (The Art of Unix Programming, Eric S. Raymond)
 
 ## Theory
 
@@ -19,7 +20,7 @@ Methodology principles taken from a single primary source.
 
 ## Skills
 
-One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
+One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`, `unix-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
 
 ## Format
 
