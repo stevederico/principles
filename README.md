@@ -18,7 +18,7 @@ Methodology principles taken from a single primary source.
 
 ## Skills
 
-`skills/canon-rails` and `skills/canon-laravel` load an index and the few principles a task needs. Install by symlinking into `~/.claude/skills`.
+`skills/canon` loads the index and only the few principles a task needs. It is not installed by default; to install, symlink it into `~/.claude/skills`.
 
 ## Format
 
