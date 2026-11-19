@@ -18,7 +18,7 @@ Methodology principles taken from a single primary source.
 
 ## Skills
 
-`skills/canon` loads the index and only the few principles a task needs. It is not installed by default; to install, symlink it into `~/.claude/skills`.
+One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `xp-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
 
 ## Format
 
