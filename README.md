@@ -1,5 +1,7 @@
 # canon
 
+[![skills.sh](https://skills.sh/b/stevederico/canon)](https://skills.sh/stevederico/canon)
+
 Engineering principles from great open source frameworks, rewritten with no language attached. An agent (or a person) reads a principle and applies it in any language.
 
 Each framework is a folder. Each principle is one short file: rule, why, a language-neutral example, what to avoid.
@@ -17,6 +19,12 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 Methodology principles taken from a single primary source.
 
 - [theory/xp](theory/xp/README.md): 51 principles (Extreme Programming, from extremeprogramming.org)
+
+## Install
+
+```
+npx skills add stevederico/canon
+```
 
 ## Skills
 
@@ -39,3 +47,7 @@ Source: where the idea comes from
 2. No language syntax. Pseudo-code only (`find`, `save`, `each`).
 3. One principle per file. Under 40 lines.
 4. Say when to break the rule.
+
+## Sources and licenses
+
+Every principle is written in original words and cites the page it came from. The sources keep their own licenses and authors' rights. This repo's text is MIT (see LICENSE).
