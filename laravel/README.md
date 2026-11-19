@@ -1,6 +1,6 @@
 # Laravel, without PHP
 
-Design principles from the Laravel documentation and framework code, rewritten in plain terms. Each file has a rule, the reason, a language-neutral example, the common failure, when to break it, and the docs page and code path it comes from. General ideas such as migrations, queues and callbacks appear only where the Laravel docs add something distinct.
+Engineering principles from the Laravel documentation and framework code, rewritten in plain terms. Each file has a rule, the reason, a language-neutral example, the common failure, when to break it, and the docs page and code path it comes from. General ideas such as migrations, queues and callbacks appear only where the Laravel docs add something distinct.
 
 Coverage: all 105 docs pages read and checked against the framework source. Pages about separate packages (billing, search, monitoring, feature flags, AI tools) are marked "docs only" in each Source line.
 

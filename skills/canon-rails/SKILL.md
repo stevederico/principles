@@ -1,7 +1,7 @@
 ---
 name: canon-rails
 author: stevederico
-description: Rails design principles without Ruby, verified against the Rails guides and code. Use when designing or reviewing the structure of a backend app in any language and the user says "the Rails way", "like Rails", "convention over configuration", or asks how to structure models, routes, jobs, caching, migrations, security, or tests the way Rails does.
+description: Rails engineering principles without Ruby, verified against the Rails guides and code. Use when designing or reviewing the structure of a backend app in any language and the user says "the Rails way", "like Rails", "convention over configuration", or asks how to structure models, routes, jobs, caching, migrations, security, or tests the way Rails does.
 allowed-tools: Read, Grep
 ---
 

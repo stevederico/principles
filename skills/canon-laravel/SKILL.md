@@ -1,7 +1,7 @@
 ---
 name: canon-laravel
 author: stevederico
-description: Laravel design principles without PHP, verified against the Laravel docs and framework code. Use when designing or reviewing the structure of a backend app in any language and the user says "the Laravel way", "like Laravel", or asks how to structure a service container, middleware, form requests, policies, queues, events, caching, auth, or tests the way Laravel does.
+description: Laravel engineering principles without PHP, verified against the Laravel docs and framework code. Use when designing or reviewing the structure of a backend app in any language and the user says "the Laravel way", "like Laravel", or asks how to structure a service container, middleware, form requests, policies, queues, events, caching, auth, or tests the way Laravel does.
 allowed-tools: Read, Grep
 ---
 

@@ -1,6 +1,6 @@
 # canon
 
-Design principles from great open source frameworks, rewritten with no language attached. An agent (or a person) reads a principle and applies it in any language.
+Engineering principles from great open source frameworks, rewritten with no language attached. An agent (or a person) reads a principle and applies it in any language.
 
 Each framework is a folder. Each principle is one short file: rule, why, a language-neutral example, what to avoid.
 

@@ -1,6 +1,6 @@
 # Rails, without Ruby
 
-81 design principles taken from the Rails guides and framework code, restated in plain, language-agnostic terms. Each file has a rule, the reason, a pseudo-code example, the common failure, an exception, and sources (guide page plus code path, or "docs only").
+81 engineering principles taken from the Rails guides and framework code, restated in plain, language-agnostic terms. Each file has a rule, the reason, a pseudo-code example, the common failure, an exception, and sources (guide page plus code path, or "docs only").
 
 Coverage: all 77 guide pages read.
 
