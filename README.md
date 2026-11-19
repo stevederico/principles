@@ -1,6 +1,6 @@
-# canon
+# principles
 
-[![skills.sh](https://skills.sh/b/stevederico/canon)](https://skills.sh/stevederico/canon)
+[![skills.sh](https://skills.sh/b/stevederico/principles)](https://skills.sh/stevederico/principles)
 
 Engineering principles from great open source frameworks, rewritten with no language attached. An agent (or a person) reads a principle and applies it in any language.
 
@@ -24,7 +24,7 @@ Methodology principles taken from a single primary source.
 ## Install
 
 ```
-npx skills add stevederico/canon
+npx skills add stevederico/principles
 ```
 
 ## Skills

@@ -35,7 +35,6 @@ EOT
   echo "$name: $n"
 }
 
-rm -rf skills/canon
 build rails         rails-principles    Ruby       "Rails"                  'the user says "the Rails way", "like Rails" or "convention over configuration", or asks how to structure models, routes, jobs, caching, migrations, security or tests the Rails way'
 build laravel       laravel-principles  PHP        "Laravel"                'the user says "the Laravel way" or "like Laravel", or asks how to structure a container, middleware, form requests, policies, queues, events, caching, auth or tests the Laravel way'
 build nextjs        nextjs-principles   JavaScript "Next.js"                'the user asks about the server and client boundary, rendering, caching, routing, mutations, streaming or security the Next.js way'
