@@ -10,6 +10,12 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 - [laravel](laravel/README.md): 121 principles
 - [nextjs](nextjs/README.md): 100 principles
 
+## Theory
+
+Methodology principles taken from a single primary source.
+
+- [theory/xp](theory/xp/README.md): 51 principles (Extreme Programming, from extremeprogramming.org)
+
 ## Skills
 
 `skills/canon-rails` and `skills/canon-laravel` load an index and the few principles a task needs. Install by symlinking into `~/.claude/skills`.
