@@ -2,7 +2,7 @@
 
 **Rule:** Give every app its own command-line tool for operations, scaffolding and a live shell, keep each command a thin wrapper over the services the web layer also calls, and report success through the exit code.
 
-**Why:** Admin tasks need an entry point with the app already loaded. Logic in services is reusable from web, queue and CLI; logic in a command is not, and neither are HTTP handlers a home for it. Automation reads exit codes, and prompts must fall back to arguments or defaults when no terminal is attached.
+**Why:** Admin tasks need an entry point with the app already loaded. Logic in services is reusable from web, queue and CLI; logic in a command is not, and neither are HTTP handlers a home for it: the structure guide calls the web and console folders two APIs into the app, not where logic lives. Automation reads exit codes, and prompts must fall back to arguments or defaults when no terminal is attached.
 
 **Do:**
 ```
