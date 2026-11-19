@@ -2,22 +2,22 @@
 
 **Rule:** Use whatever style fits the problem: objects, functions, data pipelines, declarative setup. Do not force one style everywhere.
 
-**Why:** Real problems are mixed. A purist rule makes some parts awkward. Taking the best idea from each style gives a framework that reads well in more places.
+**Why:** Real problems are mixed. A purist rule makes some parts awkward, and borrowing the best idea from each style reads better in more places.
 
 **Do:**
 ```
 # declarative where it describes data
-has_many comments, on_delete: remove
+relation comments: removed when the post is removed
 
 # functional where it transforms data
-posts.map(title).sort
+titles = sort(map(posts, title))
 
-# plain procedures where steps matter
+# plain procedure where the steps matter
 publish(post): validate; save; notify
 ```
 
-**Don't:** Wrap a three-line procedure in a pattern class to stay "pure".
+**Don't:** Wrap a three-line procedure in a pattern class to stay pure.
 
 **Break it when:** A team needs one style for consistency. Then write the rule down.
 
-**Source:** Rails Doctrine, "No one paradigm".
+**Source:** Doctrine: https://rubyonrails.org/doctrine (No one paradigm). Docs only: no guide page states this rule and no code enforces it.

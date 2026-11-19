@@ -6,8 +6,8 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 
 ## Frameworks
 
-- [rails](rails/README.md): 21 principles
-- [laravel](laravel/README.md): 20 principles
+- [rails](rails/README.md): 81 principles
+- [laravel](laravel/README.md): 80 principles
 
 ## Format
 

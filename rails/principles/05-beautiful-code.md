@@ -1,19 +1,20 @@
 # Exalt beautiful code
 
-**Rule:** Treat readable, elegant code as a goal. If the code is ugly, keep changing the design until it reads well.
+**Rule:** Treat readable, elegant code as a goal. When the code is ugly, change the design until it reads well.
 
-**Why:** Ugly code is a signal that the abstraction is wrong. Beautiful code is easier to read, change, and teach.
+**Why:** Ugly code signals a wrong abstraction. Code that reads well is easier to change and to teach.
 
 **Do:**
 ```
-# the API you want to write comes first, then you build it
-validates name: present, length: 3..50
+# write the call site as you wish it read, then build the thing behind it
+validate name: present, length 3 to 50
+
 # not
-validator_registry.add(name_validator_factory.create(min=3, max=50))
+registry.add(factory.create_name_validator(min = 3, max = 50))
 ```
 
-**Don't:** Accept an API because it works. Try writing the call site the way you wish it read.
+**Don't:** Accept an API because it works. Rewrite the call site until it is pleasant.
 
-**Break it when:** Never as a goal. But do not trade clarity for cleverness.
+**Break it when:** Never as a goal. Do not trade clarity for cleverness to reach it.
 
-**Source:** Rails Doctrine, "Exalt beautiful code".
+**Source:** Doctrine: https://rubyonrails.org/doctrine (Exalt beautiful code). Docs only: no guide page states this rule and no code enforces it.

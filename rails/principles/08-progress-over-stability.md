@@ -1,18 +1,21 @@
 # Progress over stability
 
-**Rule:** Prefer better ideas to unchanging ones. Breaking changes are acceptable when they move things forward, if you give people a path.
+**Rule:** Break compatibility only in a minor or major release, only after a deprecation warning shipped in the release before, and never in a patch. Promise stability only for the documented public surface.
 
-**Why:** A framework frozen for compatibility rots. Users stay current when upgrades are worth the cost and the cost is small.
+**Why:** A framework frozen for compatibility rots, but users upgrade one step at a time and need warning. A published rule lets everyone plan; a public/internal line lets the project move fast inside.
 
 **Do:**
 ```
-v2 removes old_api
-deprecate old_api in v1.9 with a warning and the replacement named
-ship an upgrade guide
+1.4.0  old_api() works and warns "removed in 1.5, use new_api()"
+1.5.0  old_api() is deleted
+1.4.1  fixes only, never breaks
+internal helpers: callable but marked internal, no promise
+widely used feature: move to an optional package, say where
+upgrade guide linked from every release note
 ```
 
-**Don't:** Break things silently, or keep every mistake alive forever.
+**Don't:** Remove something that never warned, change behavior in a patch, or freeze internals the same way as public API.
 
-**Break it when:** You have a large user base that cannot move. Then lengthen the deprecation window.
+**Break it when:** A security fix has no safe old form: ship only that change and say so loudly. Rarely a change cannot be deprecated first (the 3.1 association-destroy change): ship it as a documented break.
 
-**Source:** Rails Doctrine, "Progress over stability".
+**Source:** Doctrine: https://rubyonrails.org/doctrine (Progress over stability). Guides: https://guides.rubyonrails.org/maintenance_policy.html (Versioning, Security Issues); https://guides.rubyonrails.org/contributing_to_ruby_on_rails.html (Breaking Changes); https://guides.rubyonrails.org/api_documentation_guidelines.html (Method Visibility); https://guides.rubyonrails.org/6_1_release_notes.html. Code: activesupport/lib/active_support/deprecation/reporting.rb:20; railties/lib/rails/application/configuration.rb:97-109.
