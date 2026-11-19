@@ -23,13 +23,37 @@ Methodology principles taken from a single primary source.
 
 ## Install
 
+These are agent skills, installed with the [skills.sh](https://skills.sh) CLI. It works with Claude Code, Cursor, Codex, Windsurf, Gemini and others.
+
 ```
 npx skills add stevederico/principles
 ```
 
+The CLI lists the skills in this repo and asks which to install. To pick one directly:
+
+```
+npx skills add stevederico/principles --skill rails-principles
+```
+
+To see what is in the repo without installing:
+
+```
+npx skills add stevederico/principles --list
+```
+
+To pull the latest versions of skills you already installed:
+
+```
+npx skills update
+```
+
+Once installed, an agent loads a skill when your request matches its description, for example "the Rails way" or "how would Unix structure this". It reads the skill's index, then opens only the few principles the task needs.
+
 ## Skills
 
-One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`, `unix-principles`, `axum-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
+One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`, `unix-principles`, `axum-principles`. Each carries its own copy of the index and principles, so it works installed on its own. They are generated: edit a source folder, then run `scripts/build-skills.sh`.
+
+To use one without the CLI, copy or symlink its folder from `skills/` into `~/.claude/skills`.
 
 ## Format
 
