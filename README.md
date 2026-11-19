@@ -13,6 +13,7 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 - [nextjs](nextjs/README.md): 100 principles
 - [37signals](37signals/README.md): 110 principles (Shape Up, Getting Real, Hotwire, Kamal, Solid libraries, Campfire and Writebook)
 - [unix](unix/README.md): 101 principles (The Art of Unix Programming, Eric S. Raymond)
+- [axum](axum/README.md): 100 principles (Axum, the Rust web framework from the Tokio project)
 
 ## Theory
 
@@ -28,7 +29,7 @@ npx skills add stevederico/canon
 
 ## Skills
 
-One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`, `unix-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
+One self-contained skill per source in `skills/`: `rails-principles`, `laravel-principles`, `nextjs-principles`, `37signals-principles`, `xp-principles`, `unix-principles`, `axum-principles`. Each carries its own copy of the index and principles. They are generated: edit a source folder, then run `scripts/build-skills.sh`. Not installed by default; symlink or copy a skill folder into `~/.claude/skills` to use it.
 
 ## Format
 
