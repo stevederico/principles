@@ -9,6 +9,10 @@ Each framework is a folder. Each principle is one short file: rule, why, a langu
 - [rails](rails/README.md): 81 principles
 - [laravel](laravel/README.md): 80 principles
 
+## Skills
+
+`skills/canon-rails` and `skills/canon-laravel` load an index and the few principles a task needs. Install by symlinking into `~/.claude/skills`.
+
 ## Format
 
 ```
